@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate UUID for Mod</title>
+</head>
+<body>
+    <button id="button" onclick="genrateUUID()">Generate UUID</button>
+    <p id="output"></p>
+
+
+    <script>
+        function genrateUUID(){
+            output.textContent = crypto.randomUUID();
+        }
+    </script>
+
+    <style>
+        :root {
+            color-scheme: dark;
+            font-size: 1.5rem;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        button, p {
+            font-size: inherit;
+            width: 100%;
+            padding: 1rem;
+        }
+    </style>
+</body>
+</html>
